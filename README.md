@@ -1,8 +1,25 @@
-# Metaphor-Analysis-with-distilroberta
-This project fine-tunes a **DistilRoBERTa model** for **metaphor detection** inspired by T.S. Eliot's *The Love Song of J. Alfred Prufrock*. This project uses a small, illustrative dataset designed for metaphor detection and analysis. It contains two types of conversations:
+# Metaphor-Analysis-with-roberta
 
-Professor–student dialogue discussing T.S. Eliot’s The Love Song of J. Alfred Prufrock.
-Casual student conversation about the poem.
 
-The dataset demonstrates how the model handles both literary and informal contexts, providing a foundation for training and evaluating metaphor detection with DistilRoBERTa.
-It demonstrates how large language models can be adapted for literary and cognitive semantic tasks. ## ✨ Features - Uses Hugging Face's distilroberta-base as backbone. - Fine-tuned for **binary sequence classification** (metaphor vs. non-metaphor). - Includes evaluation with **accuracy, precision, recall, and F1-score**. - Saves trained models for reuse (./models/prufrock_roberta). ## 📂 Project Structure - prufrok.convo_Roberta.(metaphor analysis with Roberta).ipynb – main notebook with code. - models/prufrock_roberta/ – directory for saving trained models (auto-created). - data/ – expected dataset location (you can adapt to your own). ## 🛠 Requirements Install dependencies:
+A fine-tuned **RoBERTa-based NLP model** for detecting **metaphorical vs literal sentences** in poetry-inspired conversational data, using the extended *Prufrock Metaphor Conversation Dataset*.
+
+---
+
+## 🔹 Project Overview
+
+Understanding figurative language like metaphors is a challenging task for AI. This project aims to classify sentences as **Metaphor** or **Literal** with high accuracy by leveraging **RoBERTa**, a transformer model known for its contextual language understanding.
+
+The dataset is inspired by T.S. Eliot’s *The Love Song of J. Alfred Prufrock* and extended with metaphorical conversational examples.
+
+---
+
+## 🔹 Features
+
+- **Fine-tuned RoBERTa** for binary classification.
+- Handles subtle literary metaphors.
+- Class-wise metrics to ensure metaphor detection performance.
+- Predict new sentences with a simple Python function.
+
+---
+
+
